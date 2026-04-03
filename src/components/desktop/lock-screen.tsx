@@ -100,6 +100,13 @@ export function LockScreen({ onUnlock }: { onUnlock: () => void }) {
             <p className="text-xs text-white/30">
               hint: check the sticky note
             </p>
+
+            <button
+              onClick={() => { setUnlocking(true); setTimeout(onUnlock, 600); }}
+              className="mt-2 text-sm text-white/40 underline underline-offset-2 transition-colors hover:text-white/70"
+            >
+              Enter as Guest
+            </button>
           </motion.div>
 
           {/* Time display at top */}

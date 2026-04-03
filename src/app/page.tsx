@@ -96,7 +96,20 @@ export default function Home() {
       </div>
 
       {/* Lock screen overlay */}
-      {locked && <LockScreen onUnlock={() => setLocked(false)} />}
+      {locked && (
+        <LockScreen
+          onUnlock={() => {
+            setLocked(false);
+            // Auto-open Finder + Notes side by side
+            setTimeout(() => {
+              wm.openWindow("finder", "Finder", { width: 700, height: 500 }, { x: 40, y: 50 });
+            }, 300);
+            setTimeout(() => {
+              wm.openWindow("notes", "Notes", { width: 520, height: 450 }, { x: 760, y: 50 });
+            }, 600);
+          }}
+        />
+      )}
 
       {/* Command palette */}
       <CommandPalette open={cmdOpen} onOpenChange={setCmdOpen} onOpenApp={handleOpenApp} />

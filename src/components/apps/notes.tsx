@@ -14,6 +14,28 @@ type Note = {
 
 const notes: Note[] = [
   {
+    id: "welcome",
+    title: "Welcome — How to explore",
+    date: "Start here",
+    preview: "Hey! Here's how this works...",
+    content: (
+      <div className="space-y-4">
+        <h1 className="text-xl font-bold text-[#e8e8e8]">Welcome to my desktop</h1>
+        <p className="text-[15px] text-[#ccc]">This is my portfolio, built as a macOS desktop. Click the apps in the dock at the bottom to explore.</p>
+        <div className="space-y-2 text-[14px] text-[#ccc]">
+          <p><strong className="text-[#e8e8e8]">📁 Finder</strong> — Resume, experience, education, achievements</p>
+          <p><strong className="text-[#e8e8e8]">🛍️ App Store</strong> — Projects I&apos;ve built</p>
+          <p><strong className="text-[#e8e8e8]">⌨️ Terminal</strong> — Interactive command line (type <code className="rounded bg-[#333] px-1.5 py-0.5 text-[13px] text-green-400">help</code>)</p>
+          <p><strong className="text-[#e8e8e8]">🌐 Chrome</strong> — My profiles on GitHub, LinkedIn, X, Instagram</p>
+          <p><strong className="text-[#e8e8e8]">📝 Notes</strong> — My plans, hot takes, and goals (you&apos;re here!)</p>
+          <p><strong className="text-[#e8e8e8]">⚙️ Settings</strong> — My tech stack</p>
+          <p><strong className="text-[#e8e8e8]">✉️ Mail</strong> — Contact me</p>
+        </div>
+        <p className="text-[13px] text-[#888]">Tip: Press <kbd className="rounded bg-[#333] px-1.5 py-0.5 text-[12px]">⌘K</kbd> to search anything. Try the Konami code for a surprise.</p>
+      </div>
+    ),
+  },
+  {
     id: "building-next",
     title: "What I'm building next",
     date: "Apr 3, 2025",
