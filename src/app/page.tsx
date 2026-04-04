@@ -1,4 +1,5 @@
 import { SiteNav } from "@/components/site-nav";
+import { ScrollIndicator } from "@/components/scroll-indicator";
 import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <>
       <SiteNav />
+      <ScrollIndicator />
       <main>
         <HeroSection />
         <AboutSection />

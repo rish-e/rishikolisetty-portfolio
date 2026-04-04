@@ -1,25 +1,17 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
 import { MacOSDesktop } from "@/components/macos-desktop";
 
 export function MacBookFrame() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(0.55);
 
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  const rotateX = useSpring(useMotionValue(6), { damping: 20, stiffness: 150 });
-  const rotateY = useSpring(useMotionValue(0), { damping: 20, stiffness: 150 });
-
-  // Compute scale based on container width
   useEffect(() => {
     const updateScale = () => {
       if (!containerRef.current) return;
       const containerWidth = containerRef.current.offsetWidth;
-      // Leave some padding for the bezel
-      const screenWidth = containerWidth - 24; // 12px bezel on each side
+      const screenWidth = containerWidth - 24;
       setScale(Math.min(screenWidth / 1440, 0.75));
     };
     updateScale();
@@ -27,37 +19,15 @@ export function MacBookFrame() {
     return () => window.removeEventListener("resize", updateScale);
   }, []);
 
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-    const x = (e.clientX - centerX) / (rect.width / 2);
-    const y = (e.clientY - centerY) / (rect.height / 2);
-    rotateY.set(x * 3);
-    rotateX.set(6 - y * 3);
-  };
-
-  const handleMouseLeave = () => {
-    rotateX.set(6);
-    rotateY.set(0);
-  };
-
   const screenHeight = 900 * scale;
   const screenWidth = 1440 * scale;
 
   return (
     <div
       ref={containerRef}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
       className="mx-auto w-full max-w-5xl px-4"
-      style={{ perspective: "1800px" }}
     >
-      <motion.div
-        style={{ rotateX, rotateY }}
-        className="mx-auto"
-      >
+      <div className="mx-auto">
         {/* Screen / Lid */}
         <div
           className="mx-auto overflow-hidden rounded-xl border border-[#444] bg-[#0a0a0a] shadow-2xl shadow-black/50"
@@ -69,13 +39,10 @@ export function MacBookFrame() {
           {/* Webcam notch */}
           <div className="mx-auto mb-1.5 h-1.5 w-3 rounded-full bg-[#1a1a1a]" />
 
-          {/* Screen area — renders the desktop at 1440x900, scaled down */}
+          {/* Screen area */}
           <div
             className="overflow-hidden rounded-[4px]"
-            style={{
-              width: screenWidth,
-              height: screenHeight,
-            }}
+            style={{ width: screenWidth, height: screenHeight }}
           >
             <div
               style={{
@@ -104,7 +71,7 @@ export function MacBookFrame() {
             clipPath: "polygon(3% 0%, 97% 0%, 100% 100%, 0% 100%)",
           }}
         />
-      </motion.div>
+      </div>
     </div>
   );
 }

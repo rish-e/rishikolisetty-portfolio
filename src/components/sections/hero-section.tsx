@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-black pt-16 pb-12">
+    <section id="hero" className="relative min-h-screen bg-black pt-16 pb-12">
       {/* Subtle gradient behind laptop */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/10 to-transparent" />
 
