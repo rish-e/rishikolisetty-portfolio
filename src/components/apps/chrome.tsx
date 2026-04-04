@@ -313,7 +313,14 @@ export function ChromeApp() {
         </div>
         <div className="flex flex-1 items-center gap-2 rounded-full bg-[#35363A] px-3 py-1">
           <Lock className="h-3 w-3 text-[#888]" />
-          <span className="text-[12px] text-[#ccc]">{current.url}</span>
+          <a
+            href={current.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[12px] text-[#ccc] hover:text-white hover:underline"
+          >
+            {current.url}
+          </a>
         </div>
         <Star className="h-3.5 w-3.5 text-[#888]" />
       </div>
