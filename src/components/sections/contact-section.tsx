@@ -15,7 +15,7 @@ export function ContactSection() {
 
   const handleSend = () => {
     window.open(
-      `mailto:rishi@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+      `mailto:rishi.kolisetty@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
       "_blank"
     );
   };
@@ -59,18 +59,21 @@ export function ContactSection() {
             <div className="bg-[#1a1a1a]">
               <div className="flex items-center border-b border-[#2a2a2a] px-4 py-2.5">
                 <span className="w-16 text-[13px] text-white/40">To:</span>
-                <span className="text-[13px] text-white/70">rishi@example.com</span>
+                <span className="text-[13px] text-white/70">rishi.kolisetty@gmail.com</span>
               </div>
               <div className="flex items-center border-b border-[#2a2a2a] px-4 py-2.5">
-                <span className="w-16 text-[13px] text-white/40">Subject:</span>
+                <label htmlFor="contact-subject" className="w-16 text-[13px] text-white/40">Subject:</label>
                 <input
+                  id="contact-subject"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
                   placeholder="What's on your mind?"
                   className="flex-1 bg-transparent text-[13px] text-white placeholder:text-white/20 outline-none"
                 />
               </div>
+              <label htmlFor="contact-body" className="sr-only">Message</label>
               <textarea
+                id="contact-body"
                 value={body}
                 onChange={(e) => setBody(e.target.value)}
                 placeholder="Write your message..."

@@ -250,8 +250,8 @@ function EmailPage() {
         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-600 text-2xl">📧</div>
         <h2 className="mt-4 text-lg font-bold text-white">Get in Touch</h2>
         <p className="mt-2 text-[14px] text-[#888]">Want to chat? Send me an email.</p>
-        <a href="mailto:rishi@example.com" className="mt-4 inline-block rounded-full bg-blue-500 px-6 py-2 text-[13px] font-medium text-white hover:bg-blue-600">
-          rishi@example.com
+        <a href="mailto:rishi.kolisetty@gmail.com" className="mt-4 inline-block rounded-full bg-blue-500 px-6 py-2 text-[13px] font-medium text-white hover:bg-blue-600">
+          rishi.kolisetty@gmail.com
         </a>
       </div>
     </div>

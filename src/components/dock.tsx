@@ -41,7 +41,7 @@ function DockIcon({
   );
 
   return (
-    <button onClick={onOpen} className="relative">
+    <button onClick={onOpen} aria-label={`Open ${app.name}`} className="relative">
       {/* Tooltip */}
       {hovered && (
         <motion.span

@@ -12,6 +12,9 @@ import { Footer } from "@/components/sections/footer";
 export default function Home() {
   return (
     <>
+      <a href="#about" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:text-black">
+        Skip to main content
+      </a>
       <SiteNav />
       <ScrollIndicator />
       <main>

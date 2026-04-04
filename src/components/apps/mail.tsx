@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Send } from "lucide-react";
 
 export function MailApp() {
-  const [to] = useState("rishi@example.com");
+  const [to] = useState("rishi.kolisetty@gmail.com");
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
   const [sent, setSent] = useState(false);

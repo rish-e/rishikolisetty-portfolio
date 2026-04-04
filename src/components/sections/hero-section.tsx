@@ -24,7 +24,7 @@ export function HeroSection() {
         transition={{ duration: 0.6, delay: 0.8 }}
         className="mt-10 text-center"
       >
-        <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl" id="page-title">
           This is my desktop.{" "}
           <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Explore it.

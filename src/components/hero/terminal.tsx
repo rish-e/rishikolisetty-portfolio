@@ -134,7 +134,7 @@ function getContactOutput(): Line[] {
     { text: "  GitHub       github.com/rishikolisetty", className: "text-cyan-400" },
     { text: "  LinkedIn     linkedin.com/in/rishikolisetty", className: "text-blue-400" },
     { text: "  Twitter/X    twitter.com/rishikolisetty", className: "text-sky-400" },
-    { text: "  Email        rishi@example.com", className: "text-green-400" },
+    { text: "  Email        rishi.kolisetty@gmail.com", className: "text-green-400" },
     { text: "" },
   ];
 }
@@ -176,7 +176,7 @@ function processCommand(input: string): { lines: Line[]; clear?: boolean } {
             { text: "" },
             { text: "  ✓ Request accepted.", className: "text-green-400 font-bold" },
             { text: "  Sending offer letter... just kidding." },
-            { text: "  But seriously, let's talk → rishi@example.com", className: "text-cyan-400" },
+            { text: "  But seriously, let's talk → rishi.kolisetty@gmail.com", className: "text-cyan-400" },
             { text: "" },
           ],
         };

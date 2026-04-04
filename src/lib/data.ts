@@ -125,5 +125,5 @@ export const socialLinks = {
   github: "https://github.com/rish-e",
   linkedin: "https://linkedin.com/in/rishikolisetty",
   twitter: "https://twitter.com/rishikolisetty",
-  email: "mailto:rishi@example.com",
+  email: "mailto:rishi.kolisetty@gmail.com",
 };

@@ -140,6 +140,7 @@ export function Window({
         {/* Traffic lights — large hit area, visible dot */}
         <div className="flex items-center gap-1">
           <button
+            aria-label="Close window"
             onClick={(e) => { e.stopPropagation(); onClose(); }}
             className="flex h-7 w-7 items-center justify-center rounded-full"
           >
@@ -148,6 +149,7 @@ export function Window({
             </div>
           </button>
           <button
+            aria-label="Minimize window"
             onClick={(e) => { e.stopPropagation(); onMinimize(); }}
             className="flex h-7 w-7 items-center justify-center rounded-full"
           >
@@ -156,6 +158,7 @@ export function Window({
             </div>
           </button>
           <button
+            aria-label="Maximize window"
             onClick={(e) => { e.stopPropagation(); onMaximize(); }}
             className="flex h-7 w-7 items-center justify-center rounded-full"
           >
