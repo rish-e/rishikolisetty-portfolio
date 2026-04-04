@@ -36,19 +36,34 @@ const notes: Note[] = [
     ),
   },
   {
-    id: "building-next",
-    title: "What I'm building next",
-    date: "Apr 3, 2025",
-    preview: "Upcoming priorities for Q2...",
+    id: "ideas",
+    title: "Ideas I'm exploring",
+    date: "Apr 2025",
+    preview: "B2B AI platform, Unicred, Artisan marketplace...",
     content: (
       <div className="space-y-4">
-        <h1 className="text-xl font-bold text-[#e8e8e8]">What I&apos;m building next</h1>
-        <p className="text-sm text-[#999]">Upcoming priorities for Q2 2025</p>
+        <h1 className="text-xl font-bold text-[#e8e8e8]">Ideas I&apos;m exploring</h1>
         <ul className="list-disc space-y-3 pl-5 text-[15px] leading-relaxed text-[#ccc]">
+          <li><strong className="text-[#e8e8e8]">B2B Enterprise AI Platform</strong> — Onboarding, training, support, and workflow optimization. Multimodal guidance with platform-aware UI assistance, personalization, and enterprise integrations.</li>
+          <li><strong className="text-[#e8e8e8]">Unicred</strong> — Centralized credit wallet for AI tools. Users buy credits, spend across partner platforms. Dynamic conversion rates, 5-10% margin. Facilitator model for regulatory simplicity.</li>
+          <li><strong className="text-[#e8e8e8]">Artisan Marketplace</strong> — Platform connecting Indian artists and artisans to global buyers in Europe and North America. Thesis: commercial viability drives cultural preservation.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    id: "building-next",
+    title: "What I'm shipping",
+    date: "Apr 3, 2025",
+    preview: "Luami, DebuggAI, Scout, RenderKit...",
+    content: (
+      <div className="space-y-4">
+        <h1 className="text-xl font-bold text-[#e8e8e8]">What I&apos;m shipping</h1>
+        <ul className="list-disc space-y-3 pl-5 text-[15px] leading-relaxed text-[#ccc]">
+          <li><strong className="text-[#e8e8e8]">Luami</strong> — Scaling the nightwear brand. Managing 5-person global team and 3 Indian manufacturers.</li>
           <li><strong className="text-[#e8e8e8]">DebuggAI v1.0</strong> — Ship the MVP with Code QA + Intent Verification. Open-source the CLI and engine.</li>
-          <li><strong className="text-[#e8e8e8]">RenderKit launch</strong> — Supabase integration, Razorpay billing, custom landing page. Go live.</li>
           <li><strong className="text-[#e8e8e8]">Scout live trading</strong> — Move from paper trading to live. Add risk management layer.</li>
-          <li><strong className="text-[#e8e8e8]">Autopilot Phase 2</strong> — Persistent browser profiles, playbooks, custom MCP server wrapper.</li>
+          <li><strong className="text-[#e8e8e8]">RenderKit launch</strong> — Supabase integration, Razorpay billing, custom landing page.</li>
         </ul>
       </div>
     ),
@@ -57,17 +72,17 @@ const notes: Note[] = [
     id: "hot-takes",
     title: "Hot takes",
     date: "Mar 15, 2025",
-    preview: "Things I believe about tech...",
+    preview: "Things I believe...",
     content: (
       <div className="space-y-4">
         <h1 className="text-xl font-bold text-[#e8e8e8]">Hot takes</h1>
         <div className="space-y-4 text-[15px] leading-relaxed text-[#ccc]">
-          <p>&ldquo;AI doesn&apos;t replace engineers — it replaces engineers who don&apos;t use AI.&rdquo;</p>
-          <p>&ldquo;Ship MVPs, not pitch decks. The market will tell you what to build next.&rdquo;</p>
-          <p>&ldquo;Price on value, not on what competitors charge. If you compete on price, you lose on price.&rdquo;</p>
-          <p>&ldquo;The best way to learn is to build something real. Tutorials are where curiosity goes to die.&rdquo;</p>
-          <p>&ldquo;TypeScript isn&apos;t optional. It&apos;s the difference between shipping and debugging.&rdquo;</p>
-          <p>&ldquo;Open-source the engine, monetize the cloud. That&apos;s the playbook.&rdquo;</p>
+          <p>&ldquo;AI doesn&apos;t replace entrepreneurs — it replaces ones who don&apos;t use it.&rdquo;</p>
+          <p>&ldquo;Ship MVPs, not pitch decks. The market tells you what to build next.&rdquo;</p>
+          <p>&ldquo;Every indicator tells a story. MACD shows momentum, EMA confirms trend. The market always has the last word.&rdquo;</p>
+          <p>&ldquo;Price on value, not competition. Race to the bottom = bottom.&rdquo;</p>
+          <p>&ldquo;Open-source the engine, monetize the cloud.&rdquo;</p>
+          <p>&ldquo;Consistency beats intensity. In the gym, in code, in business.&rdquo;</p>
         </div>
       </div>
     ),
@@ -76,17 +91,17 @@ const notes: Note[] = [
     id: "goals",
     title: "Goals for 2025",
     date: "Jan 1, 2025",
-    preview: "Launch 2 products to paying users...",
+    preview: "Scale Luami, launch products...",
     content: (
       <div className="space-y-4">
         <h1 className="text-xl font-bold text-[#e8e8e8]">Goals for 2025</h1>
         <ul className="space-y-2 text-[15px] leading-relaxed text-[#ccc]">
-          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Launch 2 products to paying users</li>
-          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Build a sustainable revenue stream from SaaS</li>
-          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Contribute meaningfully to open source</li>
-          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Go deep on quantitative trading strategies</li>
-          <li className="flex items-center gap-2"><span className="text-green-500">&#9745;</span> <span>Ship every single day</span></li>
-          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Meet more builders and founders</li>
+          <li className="flex items-center gap-2"><span className="text-green-500">&#9745;</span> Scale Luami to international sales</li>
+          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Launch 2 tech products to paying users</li>
+          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Go deep on options and derivatives trading</li>
+          <li className="flex items-center gap-2"><span className="text-green-500">&#9745;</span> Ship every single day</li>
+          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Attend more global tech conferences</li>
+          <li className="flex items-center gap-2"><span className="text-[#999]">&#9744;</span> Get conversational in Spanish</li>
         </ul>
       </div>
     ),

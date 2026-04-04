@@ -53,21 +53,22 @@ export function AboutSection() {
               {/* Content */}
               <div className="flex-1 bg-[#1a1a1a] p-6">
                 <p className="text-[15px] leading-relaxed text-[#ccc]">
-                  I&apos;m an engineer based in India who loves building products
-                  at the edge of what&apos;s possible. I think the best software
-                  comes from deeply understanding both the technology and the
-                  problem it solves.
+                  I&apos;m an engineer and entrepreneur based in Bangalore, India.
+                  I build across AI, fintech, and developer tools — but I&apos;m
+                  equally deep in financial markets, algorithmic trading, and
+                  subscription business models.
                 </p>
                 <p className="mt-4 text-[15px] leading-relaxed text-[#ccc]">
-                  Right now I&apos;m building across AI, fintech, and developer
-                  tools — shipping code daily, learning from the market, and
-                  caring deeply about craft.
+                  I trade options and derivatives, build AI-driven sentiment
+                  analysis tools, design subscription platforms with Stripe and
+                  Razorpay, and ship software daily. Currently learning Spanish
+                  on the side.
                 </p>
 
-                <div className="mt-6 flex flex-wrap gap-4">
+                <div className="mt-6 flex flex-wrap gap-3">
                   <div className="flex items-center gap-2 rounded-lg bg-[#252525] px-4 py-2.5">
                     <MapPin className="h-4 w-4 text-blue-400" />
-                    <span className="text-sm text-[#ccc]">India</span>
+                    <span className="text-sm text-[#ccc]">Bangalore, India</span>
                   </div>
                   <div className="flex items-center gap-2 rounded-lg bg-[#252525] px-4 py-2.5">
                     <Clock className="h-4 w-4 text-green-400" />
