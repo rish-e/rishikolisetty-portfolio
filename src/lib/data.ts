@@ -15,6 +15,7 @@ export const projects: Project[] = [
       "Puppeteer-based API for generating dynamic OG images and screenshots with templating. 5 built-in templates, LRU caching, API key auth, and rate limiting.",
     tech: ["Node.js", "Puppeteer", "Express", "TypeScript"],
     status: "building",
+    href: "https://github.com/rish-e/RenderKit",
   },
   {
     title: "Autopilot",
@@ -23,6 +24,7 @@ export const projects: Project[] = [
       "Fully autonomous Claude Code agent that handles deployments, service configuration, and credential management. Smart permissions with a guardian safety net.",
     tech: ["Bash", "MCP", "Playwright", "macOS Keychain"],
     status: "building",
+    href: "https://github.com/rish-e/autopilot",
   },
   {
     title: "Scout",
@@ -31,6 +33,7 @@ export const projects: Project[] = [
       "Signal bot that detects high-probability options entries using moving averages and Bollinger Bands, then sends alerts to Telegram with charts and confidence scoring.",
     tech: ["Python", "Alpaca API", "Telegram", "matplotlib"],
     status: "beta",
+    href: "https://github.com/rish-e/scout",
   },
   {
     title: "ShipClip",
@@ -39,6 +42,7 @@ export const projects: Project[] = [
       "Browser-based video finisher for talking-head creators. Upload raw footage, get silence removed and captions burned in. Client-side FFmpeg processing.",
     tech: ["JavaScript", "FFmpeg.wasm", "Deepgram", "Vercel"],
     status: "live",
+    href: "https://github.com/rish-e/ShipClip",
   },
   {
     title: "DebuggAI",
@@ -47,6 +51,7 @@ export const projects: Project[] = [
       "Verification layer for AI-generated software. Tackles the 1.7x bug rate in AI code with deep analysis, intent verification, and creative QA.",
     tech: ["Python", "TypeScript", "MCP", "Apache 2.0"],
     status: "building",
+    href: "https://github.com/rish-e/debuggai",
   },
 ];
 

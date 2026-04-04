@@ -137,34 +137,31 @@ export function Window({
             : "border-[#333] bg-[#282828]"
         )}
       >
-        {/* Traffic lights */}
-        <div className="flex items-center gap-2">
+        {/* Traffic lights — large hit area, visible dot */}
+        <div className="flex items-center gap-1">
           <button
             onClick={(e) => { e.stopPropagation(); onClose(); }}
-            className={cn(
-              "flex h-3 w-3 items-center justify-center rounded-full transition-colors",
-              focused ? "bg-[#ff5f57]" : "bg-[#555]"
-            )}
+            className="flex h-7 w-7 items-center justify-center rounded-full"
           >
-            <span className="hidden text-[8px] leading-none text-black/70 group-hover:inline">&#x2715;</span>
+            <div className={cn("flex h-3.5 w-3.5 items-center justify-center rounded-full transition-colors", focused ? "bg-[#ff5f57]" : "bg-[#555]")}>
+              <span className="hidden text-[9px] leading-none text-black/70 group-hover:inline">&#x2715;</span>
+            </div>
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); onMinimize(); }}
-            className={cn(
-              "flex h-3 w-3 items-center justify-center rounded-full transition-colors",
-              focused ? "bg-[#febc2e]" : "bg-[#555]"
-            )}
+            className="flex h-7 w-7 items-center justify-center rounded-full"
           >
-            <span className="hidden text-[8px] leading-none text-black/70 group-hover:inline">&#x2212;</span>
+            <div className={cn("flex h-3.5 w-3.5 items-center justify-center rounded-full transition-colors", focused ? "bg-[#febc2e]" : "bg-[#555]")}>
+              <span className="hidden text-[9px] leading-none text-black/70 group-hover:inline">&#x2212;</span>
+            </div>
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); onMaximize(); }}
-            className={cn(
-              "flex h-3 w-3 items-center justify-center rounded-full transition-colors",
-              focused ? "bg-[#28c840]" : "bg-[#555]"
-            )}
+            className="flex h-7 w-7 items-center justify-center rounded-full"
           >
-            <span className="hidden text-[8px] leading-none text-black/70 group-hover:inline">&#x2795;</span>
+            <div className={cn("flex h-3.5 w-3.5 items-center justify-center rounded-full transition-colors", focused ? "bg-[#28c840]" : "bg-[#555]")}>
+              <span className="hidden text-[9px] leading-none text-black/70 group-hover:inline">&#x2795;</span>
+            </div>
           </button>
         </div>
 
