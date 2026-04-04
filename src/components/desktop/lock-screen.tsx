@@ -31,7 +31,7 @@ export function LockScreen({ onUnlock }: { onUnlock: () => void }) {
         <motion.div
           exit={{ y: "-100%", opacity: 0 }}
           transition={{ duration: 0.6, ease: [0.32, 0.72, 0, 1] }}
-          className="fixed inset-0 z-[2000] flex items-center justify-center"
+          className="absolute inset-0 z-[2000] flex items-center justify-center"
           style={{
             background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%)",
           }}

@@ -32,7 +32,7 @@ export function MenuBar({
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-[1000] flex h-[25px] items-center justify-between bg-black/50 px-3 backdrop-blur-2xl">
+    <div className="absolute top-0 left-0 right-0 z-[1000] flex h-[25px] items-center justify-between bg-black/50 px-3 backdrop-blur-2xl">
       {/* Left */}
       <div className="flex items-center gap-4">
         <span className="text-[13px] font-medium text-white/90"></span>

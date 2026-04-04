@@ -87,7 +87,7 @@ export function Dock({
       transition={{ delay: 0.3, type: "spring", stiffness: 200, damping: 20 }}
       onMouseMove={(e) => mouseX.set(e.clientX)}
       onMouseLeave={() => mouseX.set(-1000)}
-      className="fixed bottom-3 left-1/2 z-[900] -translate-x-1/2"
+      className="absolute bottom-3 left-1/2 z-[900] -translate-x-1/2"
     >
       <div className="flex items-end gap-1 rounded-2xl border border-white/20 bg-white/10 px-2.5 py-1.5 backdrop-blur-2xl">
         {apps.map((app) => (

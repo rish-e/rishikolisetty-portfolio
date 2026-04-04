@@ -55,7 +55,7 @@ export function CommandPalette({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.1 }}
-            className="fixed inset-0 z-[2000] bg-black/40 backdrop-blur-sm"
+            className="absolute inset-0 z-[2000] bg-black/40 backdrop-blur-sm"
             onClick={() => onOpenChange(false)}
           />
 
@@ -65,7 +65,7 @@ export function CommandPalette({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: -10 }}
             transition={{ duration: 0.15 }}
-            className="fixed left-1/2 top-[28%] z-[2001] w-full max-w-lg -translate-x-1/2"
+            className="absolute left-1/2 top-[28%] z-[2001] w-full max-w-lg -translate-x-1/2"
           >
             <CommandPrimitive
               className="overflow-hidden rounded-xl border border-[#444] bg-[#1e1e1e] shadow-2xl"

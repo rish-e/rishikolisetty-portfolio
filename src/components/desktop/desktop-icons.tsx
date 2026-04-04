@@ -44,7 +44,7 @@ export function DesktopIcons({
   onOpenFinder: (folderId: string) => void;
 }) {
   return (
-    <div className="fixed top-8 right-3 z-[5] flex flex-col items-end gap-1 pt-1">
+    <div className="absolute top-8 right-3 z-[5] flex flex-col items-end gap-1 pt-1">
       {desktopItems.map((item) => (
         <button
           key={item.name}

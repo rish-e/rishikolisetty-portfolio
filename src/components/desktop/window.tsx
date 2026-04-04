@@ -113,7 +113,7 @@ export function Window({
       onPointerDown={onFocus}
       style={{
         zIndex: state.zIndex,
-        position: "fixed",
+        position: "absolute",
         left,
         top,
         width,

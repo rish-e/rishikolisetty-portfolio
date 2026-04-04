@@ -13,7 +13,7 @@ export function KonamiOverlay() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="pointer-events-none fixed inset-0 z-[200] flex items-center justify-center"
+          className="pointer-events-none absolute inset-0 z-[200] flex items-center justify-center"
         >
           <motion.div
             initial={{ scale: 0.5, rotate: -10 }}
