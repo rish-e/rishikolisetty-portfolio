@@ -49,8 +49,16 @@ export async function POST(req: Request) {
 
     const result = streamText({
       model: anthropic("claude-sonnet-4-20250514"),
-      system: RISHI_PERSONA,
-      messages: await convertToModelMessages(messages),
+      messages: [
+        {
+          role: "system",
+          content: RISHI_PERSONA,
+          providerOptions: {
+            anthropic: { cacheControl: { type: "ephemeral" } },
+          },
+        },
+        ...(await convertToModelMessages(messages)),
+      ],
       maxOutputTokens: 500,
     });
 
