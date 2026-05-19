@@ -1,21 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { Code2, Globe, Server, Brain, Cloud, Wrench, ChevronLeft, TrendingUp, CreditCard, Users } from "lucide-react";
+import { Code2, Brain, TrendingUp, CreditCard, Users, Lightbulb, ChevronLeft } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type Pane = { id: string; label: string; icon: React.ComponentType<{ className?: string }>; color: string; items: string[] };
 
 const panes: Pane[] = [
-  { id: "languages", label: "Languages", icon: Code2, color: "bg-orange-500", items: ["TypeScript", "Python", "JavaScript", "Bash", "SQL", "Java", "C++", "HTML"] },
-  { id: "frontend", label: "Frontend", icon: Globe, color: "bg-blue-500", items: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "shadcn/ui"] },
-  { id: "backend", label: "Backend", icon: Server, color: "bg-green-500", items: ["Node.js", "Express", "FastAPI", "REST APIs", "WebSockets"] },
-  { id: "ai", label: "AI & ML", icon: Brain, color: "bg-purple-500", items: ["Claude API", "Google AI Studio", "MCP", "AI SDK", "Prompt Engineering", "Sentiment Analysis"] },
-  { id: "trading", label: "Finance & Trading", icon: TrendingUp, color: "bg-emerald-500", items: ["Options & Derivatives", "MACD / EMA", "TC2000", "MarketWatch", "Algorithmic Trading"] },
-  { id: "business", label: "Business & Payments", icon: CreditCard, color: "bg-pink-500", items: ["Stripe", "Razorpay", "Subscription Models", "SaaS Economics", "Supply Chain"] },
+  { id: "programming", label: "Programming", icon: Code2, color: "bg-orange-500", items: ["C++", "Java", "HTML"] },
+  { id: "ai", label: "AI & Tools", icon: Brain, color: "bg-purple-500", items: ["Claude AI", "Google AI Studio", "AI-Assisted Development", "Prompt Engineering"] },
+  { id: "trading", label: "Finance & Trading", icon: TrendingUp, color: "bg-emerald-500", items: ["Options & Derivatives", "MACD / EMA", "TC2000", "MarketWatch", "Algorithmic Trading", "Sentiment Analysis"] },
+  { id: "business", label: "Business & Payments", icon: CreditCard, color: "bg-pink-500", items: ["Stripe", "Razorpay", "Subscription Models", "SaaS Economics", "Financial Management"] },
   { id: "leadership", label: "Leadership", icon: Users, color: "bg-yellow-500", items: ["Team Management", "Global Operations", "Client Acquisition", "Negotiations", "Event Organization"] },
-  { id: "infra", label: "Infrastructure", icon: Cloud, color: "bg-cyan-500", items: ["Vercel", "Supabase", "Cloudflare", "Docker", "GitHub Actions"] },
-  { id: "tools", label: "Tools", icon: Wrench, color: "bg-gray-500", items: ["FFmpeg", "Puppeteer", "Playwright", "Git", "Claude Code"] },
+  { id: "strategy", label: "Strategy", icon: Lightbulb, color: "bg-cyan-500", items: ["Market Research", "Product Thinking", "Business Development", "Supply Chain", "Monetization Strategy"] },
 ];
 
 export function SettingsApp() {

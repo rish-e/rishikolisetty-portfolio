@@ -28,7 +28,7 @@ const NEOFETCH: Line[] = [
   { text: "    ██  ██      ██  ██    ---------------", className: "text-blue-400" },
   { text: "    ██  ██      ██  ██    OS: Entrepreneur v25.0", className: "text-cyan-400" },
   { text: "    ██  ██      ██  ██    Host: Bangalore, India", className: "text-cyan-400" },
-  { text: "    ██    ██████    ██    Kernel: TS + Python + Java", className: "text-cyan-400" },
+  { text: "    ██    ██████    ██    Kernel: C++ + Java + HTML", className: "text-cyan-400" },
   { text: "      ██          ██      Shell: Next.js / Express / FastAPI", className: "text-green-400" },
   { text: "        ██████████        Resolution: 5 products + 2 brands", className: "text-green-400" },
   { text: "                          DE: Vercel + Stripe + Razorpay", className: "text-green-400" },
@@ -118,12 +118,12 @@ function getCatOutput(name: string): Line[] {
 function getSkillsOutput(): Line[] {
   return [
     { text: "" },
-    { text: "  Languages    TypeScript · Python · JavaScript · Bash", className: "text-cyan-400" },
-    { text: "  Frontend     React · Next.js · Tailwind CSS", className: "text-blue-400" },
-    { text: "  Backend      Node.js · Express · FastAPI", className: "text-green-400" },
-    { text: "  AI / ML      Claude API · LLMs · MCP · AI SDK", className: "text-purple-400" },
-    { text: "  Infra        Vercel · Supabase · Cloudflare · Docker", className: "text-yellow-400" },
-    { text: "  Tools        FFmpeg · Puppeteer · Playwright · Git", className: "text-orange-400" },
+    { text: "  Programming  C++ · Java · HTML", className: "text-cyan-400" },
+    { text: "  AI & Tools   Claude AI · Google AI Studio · Prompt Engineering", className: "text-purple-400" },
+    { text: "  Trading      Options · Derivatives · MACD · EMA · TC2000", className: "text-green-400" },
+    { text: "  Business     Stripe · Razorpay · SaaS · Supply Chain", className: "text-blue-400" },
+    { text: "  Leadership   Team Mgmt · Global Ops · Client Acquisition", className: "text-yellow-400" },
+    { text: "  Strategy     Market Research · Product Thinking · Monetization", className: "text-orange-400" },
     { text: "" },
   ];
 }

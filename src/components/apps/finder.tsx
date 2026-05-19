@@ -54,7 +54,7 @@ function ResumeContent() {
       <div className="rounded-xl bg-[#252525] p-5">
         <h3 className="text-[11px] font-semibold uppercase tracking-wider text-[#888]">Core Skills</h3>
         <div className="mt-3 flex flex-wrap gap-1.5">
-          {["TypeScript", "Python", "React", "Next.js", "Node.js", "Options Trading", "MACD/EMA", "Stripe", "Razorpay", "AI/ML", "Team Leadership", "Supply Chain"].map((s) => (
+          {["C++", "Java", "HTML", "Options Trading", "MACD/EMA", "Stripe", "Razorpay", "AI Tools", "Team Leadership", "Supply Chain", "Business Strategy"].map((s) => (
             <span key={s} className="rounded-md bg-[#333] px-2.5 py-1 text-[11px] text-[#ccc]">{s}</span>
           ))}
         </div>

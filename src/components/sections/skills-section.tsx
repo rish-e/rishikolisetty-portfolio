@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Globe, Server, Brain, Cloud, Wrench, TrendingUp, CreditCard } from "lucide-react";
+import { Code2, Brain, TrendingUp, CreditCard, Users, Lightbulb } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const fadeUp = {
@@ -10,14 +10,12 @@ const fadeUp = {
 };
 
 const categories = [
-  { label: "Languages", icon: Code2, color: "bg-orange-500", items: ["TypeScript", "Python", "JavaScript", "Bash", "SQL"] },
-  { label: "Frontend", icon: Globe, color: "bg-blue-500", items: ["React", "Next.js", "Tailwind CSS", "Framer Motion"] },
-  { label: "Backend", icon: Server, color: "bg-green-500", items: ["Node.js", "Express", "FastAPI", "REST APIs"] },
-  { label: "AI & ML", icon: Brain, color: "bg-purple-500", items: ["Claude API", "Google AI Studio", "MCP", "AI SDK", "Prompt Engineering"] },
+  { label: "Programming", icon: Code2, color: "bg-orange-500", items: ["C++", "Java", "HTML"] },
+  { label: "AI & Tools", icon: Brain, color: "bg-purple-500", items: ["Claude AI", "Google AI Studio", "AI-Assisted Development", "Prompt Engineering"] },
   { label: "Finance & Trading", icon: TrendingUp, color: "bg-emerald-500", items: ["Options & Derivatives", "MACD / EMA", "Sentiment Analysis", "TC2000", "MarketWatch"] },
-  { label: "Business & Payments", icon: CreditCard, color: "bg-pink-500", items: ["Stripe", "Razorpay", "Subscription Models", "SaaS Economics"] },
-  { label: "Infrastructure", icon: Cloud, color: "bg-cyan-500", items: ["Vercel", "Supabase", "Cloudflare", "Docker"] },
-  { label: "Tools", icon: Wrench, color: "bg-gray-500", items: ["FFmpeg", "Puppeteer", "Playwright", "Git", "Claude Code"] },
+  { label: "Business & Payments", icon: CreditCard, color: "bg-pink-500", items: ["Stripe", "Razorpay", "Subscription Models", "SaaS Economics", "Financial Management"] },
+  { label: "Leadership", icon: Users, color: "bg-yellow-500", items: ["Team Management", "Global Operations", "Client Acquisition", "Negotiations", "Event Organization"] },
+  { label: "Strategy", icon: Lightbulb, color: "bg-cyan-500", items: ["Market Research", "Product Thinking", "Business Development", "Supply Chain", "Monetization Strategy"] },
 ];
 
 export function SkillsSection() {
@@ -34,10 +32,10 @@ export function SkillsSection() {
             Skills
           </motion.p>
           <motion.h2 variants={fadeUp} transition={{ duration: 0.5 }} className="mt-2 text-3xl font-bold text-white sm:text-4xl">
-            Tech stack & expertise
+            Expertise
           </motion.h2>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {categories.map((cat) => (
               <motion.div
                 key={cat.label}
